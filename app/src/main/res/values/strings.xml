@@ -1,0 +1,54 @@
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;"><!-- non-breaking space, U+00A0 -->]>
+<resources>
+    <string name="app_name">iStarOne</string>
+    <string name="sekcja1">Sekcja L1</string>
+    <string name="sekcja2">Sekcja L2</string>
+    <string name="sekcja3">Sekcja P1</string>
+    <string name="sekcja4">Sekcja P2</string>
+    <string name="master">Master</string>
+    <string name="setup">Setup</string>
+    <string name="auto">Auto</string>
+    <string name="manual">Manual</string>
+    <string name="enter">Enter</string>
+    <string name="esc">Esc</string>
+    <string name="bar60">e.g. 60 bar</string>
+    <string name="max_czujnik">Maksymalne Ciśnienie Czujnika</string>
+    <string name="bar">bar</string>
+    <string name="zero">Kalibracja Zera</string>
+    <string name="user">Program Użytownika</string>
+    <string name="system">Programowanie Systemowe</string>
+    <string name="serwis">Programowanie Serwisowe</string>
+    <string name="wydatek_cieczy">Wydatek Cieczy (l/1h)</string>
+    <string name="rozstawa">Rozstawa (m)</string>
+    <string name="gęstość">Gęstość cieczy (1)</string>
+    <string name="wrażliwość">Wrażliwość</string>
+    <string name="tolerancja">Tolerancja</string>
+    <string name="minpressure">Min Bar Robocza</string>
+    <string name="maxpressure">Max Bar Robocza</string>
+    <string name="mixpressure">Ciśnienie Mieszania</string>
+    <string name="beczka">Objętość beczki</string>
+    <string name="battery">%3d%%</string>
+    <string name="czujnik_ci_nienia">CZUJNIK CIŚNIENIA</string>
+    <string name="pr_dkosc">PRĘDKOŚĆ</string>
+    <string name="zbiornik">ZBIORNIK</string>
+    <string name="sekcje">SEKCJE</string>
+    <string name="program">PROGRAM</string>
+    <string name="pomoc">POMOC</string>
+    <string name="alarmy">ALARMY</string>
+    <string name="system2">SYSTEM</string>
+    <string name="powr_t">POWRÓT</string>
+    <string name="liczba_sekcji">Proszę wybrać liczbę sekcji w opryskiwaczu: 2&nbsp;lub&nbsp;4</string>
+    <string name="liczba_impulsow">IMPULSY <br/> NA&nbsp;100M</string>
+    <string name="zaawansowane">FUNKCJE <br/> SPECJALNE</string>
+    <string name="helpera">
+        <br>%1$d&nbsp;L/ha \n</br>
+        <br>%2$.1f&nbsp;m&nbsp;&nbsp;&nbsp;&nbsp; \n</br>
+    </string>
+    <string name="helperb">
+        <br>%1$d&nbsp;L/ha \n</br>
+        <br>%2$.1f&nbsp;m&nbsp;&nbsp;&nbsp;&nbsp; \n</br>
+        <br>Manual&nbsp;&nbsp;</br>
+    </string>
+    <string name="l_h">L/ha</string>
+
+</resources>

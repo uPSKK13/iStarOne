@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tlo_panel">
+
+    <EditText
+        android:id="@+id/liczba_dysz1_txt"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint=""
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+    <EditText
+        android:id="@+id/liczba_dysz2_txt"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint=""
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/liczba_dysz1_txt" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_40ssp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/liczba_dysz1_txt"
+        app:layout_constraintEnd_toStartOf="@+id/liczba_dysz1_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/liczba_dysz1_txt" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_40ssp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/liczba_dysz2_txt"
+        app:layout_constraintEnd_toStartOf="@+id/liczba_dysz2_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/liczba_dysz2_txt" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_22ssp"
+        android:textColor="#FFFFFF"
+        android:gravity="top"
+        android:text="Proszę podać liczbę rozpylaczy (dysz)"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/liczba_dysz1_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#FFFFFF"
+        android:gravity="top"
+        android:text="1. Sekcja górna prawa lub lewa"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#FFFFFF"
+        android:gravity="top"
+        android:text="2. Sekcja dolna prawa lub lewa"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintBottom_toTopOf="@id/powrot13"
+        app:layout_constraintVertical_bias="0"/>
+
+    <Button
+        android:id="@+id/powrot13"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/powrot"
+        android:text="@string/powr_t"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/zapisz13"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_90sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/powrot"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="ZAPISZ"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/powrot13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/sekcja1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sekcjal1"/>
+
+    <include layout="@layout/sekcja12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcjal12"/>
+
+    <include layout="@layout/sekcja13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcjal13"/>
+
+    <include layout="@layout/sekcja2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcjal2"/>
+
+    <include layout="@layout/sekcja3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcjal3"/>
+
+    <include layout="@layout/sekcja4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcjal4"/>
+
+    <include layout="@layout/sekcja5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcjal5"/>
+
+    <include layout="@layout/sekcja_teejet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcja_teejet"/>
+
+    <include layout="@layout/sekcja_arag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcja_arag"/>
+
+    <include layout="@layout/sekcja_albuz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcja_albuz"/>
+
+    <include layout="@layout/sekcja_lechler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/sekcja_lechler"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="led2" type="id" />
+    <item name="led1" type="id" />
+    <item name="sprayer1" type="id" />
+    <item name="sprayer3" type="id" />
+    <item name="sprayer2" type="id" />
+    <item name="sprayer4" type="id" />
+</resources>

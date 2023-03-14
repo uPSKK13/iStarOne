@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tlo_panel">
+
+    <EditText
+        android:id="@+id/measurement2"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="1"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/expectation2"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="1"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/measurement2" />
+
+
+    <EditText
+        android:id="@+id/variance2"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="0.01"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/expectation2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Niepewność pomiaru"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintStart_toEndOf="@+id/measurement2"
+        app:layout_constraintTop_toTopOf="@+id/measurement2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Niepewność oszacowania"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintStart_toEndOf="@+id/expectation2"
+        app:layout_constraintTop_toTopOf="@+id/expectation2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Wariancja procesu"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintStart_toEndOf="@+id/variance2"
+        app:layout_constraintTop_toTopOf="@+id/variance2" />
+
+    <Button
+        android:id="@+id/powrot4"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/powrot"
+        android:text="@string/powr_t"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/zapisz4"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_90sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/powrot"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="ZAPISZ"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/powrot4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
